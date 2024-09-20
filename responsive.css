@@ -13,6 +13,42 @@
 
 } */
 
+@media (max-width:1700px) {
+    .spec-side-img {
+        width: 600px !important;
+    }
+    .spec-card-txt h3 {
+        color: #C3711F;
+        font-size: 29px;
+    }
+    .spec-card-txt p {
+        font-size: 17px;
+    }
+    .cus-review {
+        margin-top: 2rem;
+        padding: 5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem 10rem 1rem 10rem;
+    }
+    .review-txt {
+        padding: 2rem 2rem 2rem 2rem;
+        background-color: #d9d9d9c4;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+        gap: 1rem;
+        border-radius: 15px;
+    }
+    footer{
+        gap: 1rem !important;
+    }
+}
+
 @media (max-width:1444px) {
     .special-sect{
         flex-wrap: wrap;
