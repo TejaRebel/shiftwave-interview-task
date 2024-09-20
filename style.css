@@ -412,7 +412,6 @@ nav li a {
 
 .about img {
     max-width: 800px;
-    /* height: auto; */
 }
 
 
@@ -1094,5 +1093,4 @@ footer{
 .copyright a:hover{
     color: #C3711F;
 }
-
 
