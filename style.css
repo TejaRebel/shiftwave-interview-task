@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 *{
     margin: 0;
@@ -71,8 +75,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 3rem;
-    position: relative;
+    position: sticky; 
+    top: 0;           
+    z-index: 1000;     
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
 }
+
 
 header img {
     width: 80px;
@@ -1084,5 +1092,13 @@ footer{
 }
 
 
+.about, .rest-menu, .deal, .book-section, .special-sect, .feedback, .stats-count, .sub-news {
+    opacity: 0;
+    transform: translateY(0.2px); 
+    transition: opacity 0.1s ease-out, transform 0.1s ease-out;
+}
 
-
+.about.animate, .rest-menu.animate, .deal.animate, .book-section.animate, .special-sect.animate, .feedback.animate, .stats-count.animate, .sub-news.animate {
+    opacity: 1; 
+    transform: translateY(0); 
+}
