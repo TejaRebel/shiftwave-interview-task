@@ -14,7 +14,7 @@
 } */
 
 @media (max-width:1700px) {
-      .about img{
+    .about img{
         max-width: 650px;
     }
     .spec-side-img {
@@ -130,10 +130,10 @@
 @media (max-width: 1024px) {
     .about {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         justify-content: center;
         align-items: start;
-        padding: 1rem;
+        padding: 3rem;
         gap: 1rem;
     }
 
@@ -160,6 +160,9 @@
     .about img {
         max-width: 500px;
     }
+    .spec-side-img {
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 1024px) { 
@@ -170,6 +173,15 @@
         flex-wrap: wrap;
         gap: 1rem;
     }
+    .rest-menu {
+        padding-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        background-color: #F5F5F5;
+    }
     .tabs{
         display: flex;
         flex-wrap: wrap;
@@ -177,11 +189,27 @@
     .tab-content-active{
         margin: 1rem;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
     }
 }
 
 
+@media (max-width: 1024px) { 
+    .tabs {
+        display: none;
+    }
+    .tab-select {
+        display: block;
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) { 
+    .tab-select {
+        display: block;
+    }
+}
 
 @media (max-width: 770px) {
     h1{
@@ -276,7 +304,7 @@
         letter-spacing: 1px;
     }
     .tabs {
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         justify-content: center;
         align-items: start;
@@ -414,7 +442,7 @@
         font-size: 50px;
     }
     .tabs {
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         /* flex-direction: column; */
         justify-content: start;
