@@ -1091,14 +1091,3 @@ footer{
     color: #C3711F;
 }
 
-
-.about, .rest-menu, .deal, .book-section, .special-sect, .feedback, .stats-count, .sub-news {
-    opacity: 0;
-    transform: translateY(0.2px); 
-    transition: opacity 0.1s ease-out, transform 0.1s ease-out;
-}
-
-.about.animate, .rest-menu.animate, .deal.animate, .book-section.animate, .special-sect.animate, .feedback.animate, .stats-count.animate, .sub-news.animate {
-    opacity: 1; 
-    transform: translateY(0); 
-}
