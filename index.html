@@ -95,13 +95,23 @@
             <h4>Food Lover</h4>
             <h1>RESTAURANT MENU</h1>
         </div>
-        <ul class="tabs">
-            <li class="tab tab-active" onclick="changeTab('alldishes-img', this)">All Dishes</li>
-            <li class="tab" onclick="changeTab('dinner-img', this)">Dinner</li>
-            <li class="tab" onclick="changeTab('lunch-img', this)">Lunch</li>
-            <li class="tab" onclick="changeTab('drinks-img', this)">Drinks</li>
-            <li class="tab" onclick="changeTab('starters-img', this)">Starters</li>
-        </ul>
+    <!-- Tabs for larger screens -->
+    <ul class="tabs">
+        <li class="tab tab-active" onclick="changeTab('alldishes-img', this)">All Dishes</li>
+        <li class="tab" onclick="changeTab('dinner-img', this)">Dinner</li>
+        <li class="tab" onclick="changeTab('lunch-img', this)">Lunch</li>
+        <li class="tab" onclick="changeTab('drinks-img', this)">Drinks</li>
+        <li class="tab" onclick="changeTab('starters-img', this)">Starters</li>
+    </ul>
+
+    <!-- Dropdown for mobile and tablet screens -->
+    <select class="tab-select" onchange="selectTab(this)">
+        <option value="alldishes-img">All Dishes</option>
+        <option value="dinner-img">Dinner</option>
+        <option value="lunch-img">Lunch</option>
+        <option value="drinks-img">Drinks</option>
+        <option value="starters-img">Starters</option>
+    </select>
         
         <div class="tab-content">
             <div class="alldishes-img tab-content-item tab-content-active">
@@ -246,7 +256,7 @@
         <div class="spec-card">
             <img src="./assets/special-dish/sp-1.webp" alt="">
             <div class="spec-card-txt">
-                <h3>Corn Masala</h3>
+                <h3>Fish Curry</h3>
                 <p>Lorem ipsum, dolor sit amet. suscipit eius optio voluptatum fugiat.</p>
             </div>
             <div class="spec-pri">
@@ -256,9 +266,9 @@
         </div>
 
         <div class="spec-card">
-            <img src="./assets/special-dish/sp-3.webp" alt="">
+            <img src="./assets/special-dish/sp-2.webp" alt="">
             <div class="spec-card-txt">
-                <h3>Naan & Chicken</h3>
+                <h3>Chicken Curry</h3>
                 <p>Lorem ipsum, dolor sit amet. suscipit eius optio voluptatum fugiat.</p>
             </div>
             <div class="spec-pri">
