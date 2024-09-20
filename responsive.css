@@ -237,7 +237,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: start;
-        padding: 1rem;
+        padding: 2rem 1rem;
         gap: 1rem;
     }
 
@@ -390,6 +390,7 @@
     .tabs {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         align-items: start;
         gap: 1rem;
         margin-left: 1rem;
@@ -401,6 +402,7 @@
         display: flex;
         flex-wrap: wrap;
         /* flex-direction: column; */
+        justify-content: start;
         align-items: start;
         gap: 1rem;
         margin-left: 1rem;
@@ -481,6 +483,21 @@
     .review p{
         font-size: 17px !important;
        }
+       footer{
+        padding: 2rem;
+        gap: 3rem !important;
+       }
+       .opening-hours h2, .latest-tweets h2 {
+        margin-bottom: 1rem;
+    }
+    .copy-txt {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px !important;
+        gap: 0.1rem;
+    }
 }
 
 @media (max-width:380px) {
@@ -526,23 +543,23 @@
     .review-txt {
         padding: 2rem 3rem 2rem 3rem;
     }
-    .copyright p {
+    .copy-txt {
         color: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 12px;
+        font-size: 12px !important;
         gap: 0.1rem;
     }
 }
 
 @media (max-width:320px) {
-    .copyright p {
+    .copy-txt {
         color: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 10px;
+        font-size: 10px !important;
         gap: 0.1rem;
     }
 }
