@@ -14,6 +14,9 @@
 } */
 
 @media (max-width:1700px) {
+      .about img{
+        max-width: 650px;
+    }
     .spec-side-img {
         width: 600px !important;
     }
