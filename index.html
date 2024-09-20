@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Lovers</title>
+    <link rel="shortcut icon" href="./assets/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div class="sub-header" id="pc-version">
+        <div class="sub-info">
+            <li><ion-icon name="time-outline"></ion-icon>Open hour - 10 am -11 am</li>
+            <li><ion-icon name="call-outline"></ion-icon><a href="tel:00123456789">+00 123 456 789</a></li>
+            <li><ion-icon name="mail-unread-outline"></ion-icon><a href="mailto:support@example.com">support@example.com</a></li>
+        </div>
+        <div class="social-media">
+            <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+        </div>
+    </div>
+
+    <div class="sub-header" id="mobile-version">
+        <div class="sub-info">
+            <li><ion-icon name="time-outline"></ion-icon>10 am -11 am</li>
+            <li><a href="tel:00123456789"><ion-icon name="call-outline"></ion-icon></a></li>
+            <li><a href="mailto:support@example.com"><ion-icon name="mail-unread-outline"></ion-icon></a></li>
+        </div>
+        <div class="social-media">
+            <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+        </div>
+    </div>
+
+    <div class="header-banner">
+        <header>
+            <a href=""><img src="./assets/logo.webp" alt=""></a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li class="dropdown">
+                    <a >MENU</a>
+                    <ul class="dropdown-content">
+                        <li><a href="">Breakfast</a></li>
+                        <li><a href="">Lunch</a></li>
+                        <li><a href="">Dinner</a></li>
+                        <li><a href="">Desserts</a></li>
+                    </ul>
+                </li>
+                <li><a href="">RESERVATION</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </nav>
+            
+        </header>
+    
+        <div class="banner">
+            <div class="banner-txt">
+                <h4>Taste the flavours of</h4>
+                <h2>SOUTH INDIA</h2>
+                <p>Order from a weekly menu of tasty meals at click of a <br> button. say goodbye to meal planning and grocery shopping!</p>
+                <div class="banner-btns">
+                    <button class="book-btn">Book Table</button>
+                    <button class="our-btn">Our Menu</button>
+                </div>
+            </div>
+            <div class="banner-img">
+                <img src="./assets/banner-img-1.webp" alt="banner-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="about-txt">
+            <h4 class="about-title">About</h4>
+            <h2>FOOD LOVER</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, et! Quia optio eveniet similique explicabo magni deserunt odit mollitia eum? Mollitia minus est sint eos magni laborum, voluptas quam laboriosam.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quam ab assumenda porro. Doloribus aspernatur facilis corrupti accusamus, necessitatibus quidem. Quibusdam sequi minima suscipit eius optio voluptatum fugiat, iure necessitatibus?</p>
+            <a href="">Read More <ion-icon name="arrow-forward-outline"></ion-icon></a>
+        </div>
+        <img src="./assets/about-img1.webp" alt="">
+    </div>
+
+    <div class="rest-menu">
+        <div class="rest-log-head">
+            <img class="menu-logo" src="./assets/logo.webp" alt="Logo">
+            <h4>Food Lover</h4>
+            <h1>RESTAURANT MENU</h1>
+        </div>
+        <ul class="tabs">
+            <li class="tab tab-active" onclick="changeTab('alldishes-img', this)">All Dishes</li>
+            <li class="tab" onclick="changeTab('dinner-img', this)">Dinner</li>
+            <li class="tab" onclick="changeTab('lunch-img', this)">Lunch</li>
+            <li class="tab" onclick="changeTab('drinks-img', this)">Drinks</li>
+            <li class="tab" onclick="changeTab('starters-img', this)">Starters</li>
+        </ul>
+        
+        <div class="tab-content">
+            <div class="alldishes-img tab-content-item tab-content-active">
+                <div class="tab-img-txt">
+                    <img src="./assets/menu/fish.webp" alt="Fish">
+                    <h2>Fish</h2>
+                </div>
+                <div class="tab-img-txt">
+                    <img src="./assets/menu/kabab.webp" alt="Kabab">
+                    <h2>Kabab</h2>
+                </div>
+                <div class="tab-img-txt">
+                    <img src="./assets/menu/naan&curriers.webp" alt="Naan">
+                    <h2>Naan</h2>
+                </div>
+            </div>
+            <div class="dinner-img tab-content-item">
+                <div class="tab-img-txt">
+                    <img src="./assets/menu/fish.webp" alt="Fish">
+                    <h2>Fish</h2>
+                </div>
+                <div class="tab-img-txt">
+                    <img src="./assets/menu/naan&curriers.webp" alt="Naan">
+                    <h2>Naan</h2>
+                </div>
+                <div class="tab-img-txt">
+                    <img src="./assets/menu/kabab.webp" alt="Kabab">
+                    <h2>Kabab</h2>
+                </div>
+            </div>
+            <div class="lunch-img tab-content-item">
+                <div class="tab-img-txt">
+                    <img src="./assets/menu/naan&curriers.webp" alt="Naan">
+                    <h2>Naan</h2>
+                </div>
+                <div class="tab-img-txt">
+                    <img src="./assets/menu/fish.webp" alt="Fish">
+                    <h2>Fish</h2>
+                </div>
+                <div class="tab-img-txt">
+                    <img src="./assets/menu/kabab.webp" alt="Kabab">
+                    <h2>Kabab</h2>
+                </div>
+            </div>
+            <div class="drinks-img tab-content-item">
+                <div class="tab-img-txt">
+                    <img src="./assets/menu/kabab.webp" alt="Kabab">
+                    <h2>Kabab</h2>
+                </div>
+                <div class="tab-img-txt">
+                    <img src="./assets/menu/fish.webp" alt="Fish">
+                    <h2>Fish</h2>
+                </div>
+                <div class="tab-img-txt">
+                    <img src="./assets/menu/naan&curriers.webp" alt="Naan">
+                    <h2>Naan</h2>
+                </div>
+            </div>
+            <div class="starters-img tab-content-item">
+                <div class="tab-img-txt">
+                    <img src="./assets/menu/fish.webp" alt="Fish">
+                    <h2>Fish</h2>
+                </div>
+                <div class="tab-img-txt">
+                    <img src="./assets/menu/kabab.webp" alt="Kabab">
+                    <h2>Kabab</h2>
+                </div>
+                <div class="tab-img-txt">
+                    <img src="./assets/menu/naan&curriers.webp" alt="Naan">
+                    <h2>Naan</h2>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+
+    <div class="deal">
+        <div class="deal-txt">
+            <h4>Deal Today</h4>
+            <h1>TODAY SPECIAL DISH</h1>
+        </div>
+        <div class="deal-imgs">
+            <div class="deal-card">
+                <img src="./assets/special-dish/sp-1.webp" alt="">
+                <h2>Chicken Blow</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <b>Starts at <span class="pri-txt">₹249</span></b>
+            </div>
+            <div class="deal-card">
+                <img src="./assets/special-dish/sp-2.webp" alt="">
+                <h2>Chicken Tandoori</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <b>Starts at <span class="pri-txt">₹299</span></b>
+            </div>
+            <div class="deal-card">
+                <img src="./assets/special-dish/sp-3.webp" alt="">
+                <h2>Veg Biryani</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <b>Starts at <span class="pri-txt">₹199</span></b>
+            </div>
+            <div class="deal-card">
+                <img src="./assets/special-dish/sp-3.webp" alt="">
+                <h2>Veg Biryani</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <b>Starts at <span class="pri-txt">₹199</span></b>
+            </div>
+            <div class="deal-card">
+                <img src="./assets/special-dish/sp-3.webp" alt="">
+                <h2>Veg Biryani</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <b>Starts at <span class="pri-txt">₹199</span></b>
+            </div>
+        </div>
+        <div class="deal-dots">
+            <div class="dot dot-active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+    
+    
+    
+    
+
+    <div class="book-section">
+        <div class="book-form">
+            <h2>Book Your Table</h2>
+            <form action="">
+                <input type="text" name="" placeholder="Name" id="">
+                <input type="email" name="" placeholder="Email" id="">
+                <input type="date" name="" placeholder="Date" id="">
+                <textarea name="" placeholder="Comment" id=""></textarea>
+                <input type="submit" value="Book Now!">
+            </form>
+        </div>
+    </div>
+
+    <div class="special-sect">
+       <div class="spec-txt-card">
+        <div class="spec-head">
+            <h3 class="spec-title">From the Menu</h3>
+            <h1>SPECIAL OFFERS</h1>
+        </div>
+        <div class="spec-card">
+            <img src="./assets/special-dish/sp-1.webp" alt="">
+            <div class="spec-card-txt">
+                <h3>Fish Curry</h3>
+                <p>Lorem ipsum, dolor sit amet. suscipit eius optio voluptatum fugiat.</p>
+            </div>
+            <div class="spec-pri">
+                <h2>₹249</h2>
+                <h4>₹599</h4>
+            </div>
+        </div>
+
+        <div class="spec-card">
+            <img src="./assets/special-dish/sp-2.webp" alt="">
+            <div class="spec-card-txt">
+                <h3>Chicken Curry</h3>
+                <p>Lorem ipsum, dolor sit amet. suscipit eius optio voluptatum fugiat.</p>
+            </div>
+            <div class="spec-pri">
+                <h2>₹249</h2>
+                <h4>₹599</h4>
+            </div>
+        </div>
+       </div>
+       <img class="spec-side-img" src="./assets/special-side-img.webp" alt="">
+    </div>
+    
+    <div class="feedback">
+        <div class="feed-head">
+            
+            <h3><ion-icon name="people-outline"></ion-icon>
+                <br>Food Lover</h3>
+            <h2>CUSTOMER FEEDBACK</h2>
+        </div>
+        <div class="cus-review">
+            <div class="review">
+                <div class="review-txt">
+                <img class="rev-icon" src="./assets/icon/double-quote-serif-right-48.webp" alt="">
+                <div class="rev-msg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium libero cum culpa necessitatibus reprehenderit ab.</p>
+                    <b>Frinton Van</b>
+                </div>
+                </div>
+                <img class="review-img" src="./assets/review/review-1.webp" alt="">
+            </div>
+            <div class="review">
+                <div class="review-txt">
+                <img class="rev-icon" src="./assets/icon/double-quote-serif-right-48.webp" alt="">
+                <div class="rev-msg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium libero cum culpa necessitatibus reprehenderit ab.</p>
+                    <b>Annakai Van</b>
+                </div>
+                </div>
+                <img class="review-img" src="./assets/review/review-2.webp" alt="">
+            </div>
+            <div class="review">
+                <div class="review-txt">
+                <img class="rev-icon" src="./assets/icon/double-quote-serif-right-48.webp" alt="">
+                <div class="rev-msg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium libero cum culpa necessitatibus reprehenderit ab.</p>
+                    <b>Filipe Van</b>
+                </div>
+                </div>
+                <img class="review-img" src="./assets/review/review-3.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="stats-count">
+        <div class="best-dish">
+            <h3 id="stat-count">220+</h3>
+            <b>Best Dishes</b>
+        </div>
+        <div class="awrds-won">
+             <h3 id="awards-count">50+</h3>
+             <b>Awards Won</b>
+        </div>
+        <div class="our-chefs">
+            <h3 id="our-count">80+</h3>
+            <b>Our Chefs</b>
+        </div>
+        <div class="daily-cus">
+           <h3 id="daily-count">200+</h3>
+           <b>Daily Customers</b>
+        </div>
+    </div>
+
+    <div class="sub-news">
+        <div class="open-mail">
+            <ion-icon id="open-mail" name="mail-open-outline"></ion-icon>
+        </div>
+        <div class="sub-txt">
+            <h1>Subscribe to our Newsletter</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum necessitatibus quod impedit odio optio minus iure,</p>
+        </div>
+        <div class="email-sub">
+            <div class="sub-input">
+                <input type="email" placeholder="Enter Your Email" required value="">
+                <button>Subscribe</button>
+            </div>
+            <p>Your Email is safe with us. We won't spam you.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo-txt">
+            <img src="./assets/logo.webp" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus fuga corporis eligendi, perspiciatis vero </p>
+            <p>mollitia veritatis iste. In saepe minus error dolor quae sunt omnis alias repudiandae atque. Cupiditate.</p>
+            <a href="">Read More <ion-icon name="arrow-forward-outline"></ion-icon></a>
+        </div>
+        <div class="opening-hours">
+            <h2>Opening Hours</h2>
+            <p><span>MONDAY:</span> Closed</p>
+            <p><span>TUE - FRI:</span> ----- 10 am - 9 pm</p>
+            <p><span>SATURDAY:</span> --- 10 am - 11 pm</p>
+            <p><span>SUNDAY:</span> ------ 10 am - 12 pm</p>
+        </div>
+        <div class="latest-tweets">
+            <h2>Latest Tweets</h2>
+            <p><ion-icon name="logo-twitter"></ion-icon>Sed ventis nisl a au at ncidnt ctus volutpat. htttps://twitter.com <br><span>2 Hours age</span></p>
+            <p><ion-icon name="logo-twitter"></ion-icon>Sed ventis nisl a au at ncidnt ctus volutpat. htttps://twitter.com <br><span>2 Hours age</span></p>
+        </div>
+        <div class="instragram">
+            <h2>Instragram</h2>
+            <div class="instragram-imgs">
+                <img src="./assets/special-dish/sp-1.webp" alt="">
+                <img src="./assets/special-dish/sp-2.webp" alt="">
+                <img src="./assets/special-dish/sp-3.webp" alt="">
+                <img src="./assets/menu/fish.webp" alt="">
+                <img src="./assets/menu/kabab.webp" alt="">
+                <img src="./assets/menu/mutton.webp" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>copyright 2022 <ion-icon name="at-circle-outline"></ion-icon> <a href="">Food Lover Restaurant</a></p>
+    </div>
+
+
+    
+    
+    
+
+<script src="./script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
