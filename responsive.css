@@ -486,3 +486,13 @@
     }
 }
 
+@media (max-width:320px) {
+    .copyright p {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+        gap: 0.3rem;
+    }
+}
