@@ -1,4 +1,34 @@
 
+function handleScroll() {
+    const header = document.querySelector('header');
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 50) {
+        applyStickyHeader(header);
+    } else {
+        resetHeader(header);
+    }
+}
+
+
+function applyStickyHeader(header) {
+    header.style.backgroundColor = 'black';
+    header.style.transition = 'background-color 0.3s ease';
+    header.style.position = 'sticky';
+    header.style.top = '0';
+    header.style.zIndex = '1000'; 
+}
+
+
+function resetHeader(header) {
+    header.style.backgroundColor = 'transparent';
+    header.style.position = 'relative'; 
+}
+
+
+window.addEventListener('scroll', handleScroll);
+
+
 
 function toggleMenu() {
     const nav = document.querySelector('header nav');
@@ -117,3 +147,31 @@ document.querySelectorAll('.stats-count > div').forEach(section => {
 
 
 
+
+const elementsToAnimate = document.querySelectorAll('.about, .rest-menu, .deal, .book-section, .special-sect, .feedback, .stats-count, .sub-news');
+
+
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 && 
+        rect.left >= 0 && 
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && 
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
+    );
+}
+
+
+function checkScroll() {
+    elementsToAnimate.forEach((el) => {
+        if (isElementInViewport(el)) {
+            el.classList.add('animate'); 
+        }
+    });
+}
+
+
+window.addEventListener('scroll', checkScroll);
+
+
+checkScroll();
