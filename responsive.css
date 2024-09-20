@@ -143,7 +143,6 @@
 
     .about img {
         max-width: 280px;
-        height: 280px;
     }
 }
 
@@ -191,6 +190,7 @@
 
     .about img {
         max-width: 500px;
+        height: 370px;
     }
 }
 
@@ -229,6 +229,7 @@
 
     .about img {
         max-width: 280px;
+        height: 210px !important;
     }
 }
 
