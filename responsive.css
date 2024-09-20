@@ -208,6 +208,7 @@
 @media (max-width: 768px) { 
     .tab-select {
         display: block;
+        font-size: 20px;
     }
 }
 
@@ -396,6 +397,21 @@
 
 
 @media (max-width: 480px) {
+    #preloader img {
+        width: 100px;
+        height: 100px;
+        animation: move 2s infinite alternate;
+      }
+      
+      @keyframes move {
+        0% {
+          transform: Scale(0); 
+        }
+        100% {
+          transform: Scale(1.2); 
+        }
+      }
+
     .about {
         display: flex;
         flex-direction: column;
