@@ -412,7 +412,7 @@ nav li a {
 
 .about img {
     max-width: 800px;
-    height: auto;
+    /* height: auto; */
 }
 
 
@@ -597,6 +597,10 @@ nav li a {
     height: 20px;
     border-radius: 50%;
     background-color: #d9d9d9;
+}
+
+.dot:hover{
+    background-color: #C3711F !important; 
 }
 
 .dot-active {
