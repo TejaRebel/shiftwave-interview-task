@@ -175,4 +175,38 @@ document.querySelectorAll('.stats-count > div').forEach(section => {
 
 
 // checkScroll();
-//
+
+
+function changeTab(tabClass, element) {
+    var allTabs = document.getElementsByClassName('tab-content-item');
+    for (var i = 0; i < allTabs.length; i++) {
+        allTabs[i].style.opacity = '0';  
+        setTimeout(function(tab) {
+            tab.style.display = 'none';  
+        }, 500, allTabs[i]);
+    }
+
+    var activeTab = document.getElementsByClassName(tabClass)[0];
+    setTimeout(function() {
+        activeTab.style.display = 'flex';  
+        setTimeout(function() {
+            activeTab.style.opacity = '1'; 
+        }, 50);  
+    }, 500);  
+
+    var allTabLinks = document.getElementsByClassName('tab');
+    for (var i = 0; i < allTabLinks.length; i++) {
+        allTabLinks[i].classList.remove('tab-active');
+    }
+
+    element.classList.add('tab-active');
+}
+
+function selectTab(selectElement) {
+    var selectedValue = selectElement.value;
+    changeTab(selectedValue, document.querySelector(`[onclick*="${selectedValue}"]`));
+}
+
+window.onload = function() {
+    document.querySelector('.tab-active').click();  
+};
