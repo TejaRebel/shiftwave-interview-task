@@ -1,3 +1,15 @@
+document.addEventListener('DOMContentLoaded', function() {
+    var preloader = document.getElementById('preloader');
+    var content = document.getElementById('content');
+    
+    // Simulate a delay for demonstration purposes
+    setTimeout(function() {
+      preloader.style.display = 'none'; 
+      content.style.display = 'block';  
+    }, 2000); 
+  });
+  
+  
 
 function handleScroll() {
     const header = document.querySelector('header');
