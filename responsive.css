@@ -366,6 +366,10 @@
     .tab-img-none{
         display: none;
     }
+    .tab-img-txt img {
+        width: 320px;
+        height: 320px;
+    }
     .about-txt h4 {
         font-size: 18px;
     }
