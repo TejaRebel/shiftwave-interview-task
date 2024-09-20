@@ -90,6 +90,14 @@
         gap: 1rem;
     }
 
+    .book-btn{
+        border: 1.5px solid #C3711F;
+    }
+
+     .our-btn{
+        border: 1.5px solid #fff;
+    }
+
     .banner-img img {
         width: 100%; 
         max-width: 500px; 
@@ -192,6 +200,15 @@
         justify-content: center;
         flex-wrap: wrap;
     }
+    .special-sect {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: start;
+        align-items: center;
+    }
+    .spec-side-img {
+        width: 80% !important;
+    }
 }
 
 
@@ -227,6 +244,9 @@
         flex-direction: row;
         justify-content: center;
         gap: 0.5rem;
+    }
+    .banner p{
+        line-height: 1.5rem;
     }
     .sub-header{
         padding: 0.5rem 1rem;
@@ -315,13 +335,17 @@
 }
 
 @media (max-width: 768px) {
+    .header-banner {
+        background-image: url(./assets/banner-bg.webp);
+        background-position: left;
+    }
     .about {
         margin-top: 1rem;
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         justify-content: center;
         align-items: start;
-        padding: 1rem;
+        padding: 1rem 1rem 2rem 1rem;
         gap: 1rem;
     }
     .about-title::before {
@@ -337,8 +361,11 @@
     .about-txt {
         text-align: start;
         max-width: 60%;
+        gap: 0rem;
     }
-
+    .tab-img-none{
+        display: none;
+    }
     .about-txt h4 {
         font-size: 18px;
     }
@@ -356,7 +383,7 @@
     }
 
     .about img {
-        max-width: 500px;
+        max-width: 320px;
     }
 }
 
@@ -455,6 +482,9 @@
     .about-img {
         max-width: 280px !important;
         height: 210px !important;
+    }
+    .tab-img-none{
+        display: block;
     }
     #open-mail {
         color: #fff;
