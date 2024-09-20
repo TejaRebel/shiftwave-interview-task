@@ -124,29 +124,6 @@
 }
 
 
-@media (max-width: 480px) {
-    .banner-txt h4 {
-        font-size: 24px;
-    }
-
-    .banner-txt h2 {
-        font-size: 32px;
-    }
-
-    .banner p {
-        font-size: 16px;
-    }
-
-    .book-btn, .our-btn {
-        font-size: 20px;
-        padding: 0.5rem 2rem;
-    }
-
-    .banner-img img {
-        max-width: 300px; 
-    }
-}
-
 @media (max-width: 1024px) {
     .about {
         display: flex;
@@ -178,97 +155,9 @@
     }
 
     .about img {
-        max-width: 280px;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .about {
-        margin-top: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-        padding: 1rem;
-        gap: 1rem;
-    }
-    .about-title::before {
-        content: '';
-        position: absolute;
-        top: -15px;
-        left: 0;
-        width: 50px;
-        height: 2px;
-        background-color: #C3711F;
-        border-radius: 20px;
-    }
-    .about-txt {
-        text-align: start;
-        max-width: 60%;
-    }
-
-    .about-txt h4 {
-        font-size: 18px;
-    }
-
-    .about-txt h2 {
-        font-size: 24px;
-    }
-
-    .about-txt p {
-        font-size: 14px;
-    }
-
-    .about-txt a {
-        font-size: 14px;
-    }
-
-    .about img {
         max-width: 500px;
-        height: 370px;
     }
 }
-
-
-@media (max-width: 480px) {
-    .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-        padding: 2rem 1rem;
-        gap: 1rem;
-    }
-
-
-    .about-txt {
-        max-width: 90%;
-    }
-
-
-    .about-txt h4 {
-        font-size: 16px;
-    }
-
-    .about-txt h2 {
-        font-size: 20px;
-    }
-
-    .about-txt p {
-        font-size: 12px;
-    }
-
-    .about-txt a {
-        font-size: 12px;
-    }
-
-    .about-img {
-        max-width: 280px;
-        height: 210px !important;
-    }
-}
-
 
 @media (max-width: 1024px) { 
     .deal-card {
@@ -289,11 +178,7 @@
     }
 }
 
-@media (max-width: 600px) { 
-    .deal-card {
-        min-width: 100%; 
-    }
-}
+
 
 @media (max-width: 770px) {
     h1{
@@ -352,7 +237,7 @@
         flex-direction: column;
         justify-content: center;
         gap: 2rem;
-        align-items: center;
+        align-items: start;
     }
     .spec-card{
         width: 100%;
@@ -397,6 +282,130 @@
     }
 }
 
+@media (max-width: 768px) {
+    .about {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .about-title::before {
+        content: '';
+        position: absolute;
+        top: -15px;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background-color: #C3711F;
+        border-radius: 20px;
+    }
+    .about-txt {
+        text-align: start;
+        max-width: 60%;
+    }
+
+    .about-txt h4 {
+        font-size: 18px;
+    }
+
+    .about-txt h2 {
+        font-size: 24px;
+    }
+
+    .about-txt p {
+        font-size: 14px;
+    }
+
+    .about-txt a {
+        font-size: 14px;
+    }
+
+    .about img {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 600px) { 
+    .deal-card {
+        min-width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-txt h4 {
+        font-size: 24px;
+    }
+
+    .banner-txt h2 {
+        font-size: 32px;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+
+    .book-btn, .our-btn {
+        font-size: 20px;
+        padding: 0.5rem 2rem;
+    }
+
+    .banner-img img {
+        max-width: 300px; 
+    }
+
+    .about img {
+        width: 280px;
+    }
+}
+
+
+
+
+@media (max-width: 480px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 2rem 1rem;
+        gap: 1rem;
+    }
+
+
+    .about-txt {
+        max-width: 90%;
+    }
+
+
+    .about-txt h4 {
+        font-size: 16px;
+    }
+
+    .about-txt h2 {
+        font-size: 20px;
+    }
+
+    .about-txt p {
+        font-size: 12px;
+    }
+
+    .about-txt a {
+        font-size: 12px;
+    }
+
+    .about-img {
+        max-width: 280px !important;
+        height: 210px !important;
+    }
+}
+
+
+
+
+
 @media (max-width:430px) {
     .banner-txt h2{
         font-size: 50px;
@@ -430,6 +439,10 @@
         border-radius: 20px;
         font-size: 20px;
         transition: background-color 0.3s, color 0.3s;
+    }
+    .tab-img-txt img {
+        width: 280px;
+        height: 270px;
     }
     .spec-card {
         display: flex;
