@@ -422,9 +422,15 @@
     .cus-review {
         margin-top: 2rem;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         padding: 1rem 10rem 1rem 10rem;
     }
+    .review-txt {
+        padding: 3rem 1rem 3rem 1rem;
+    }
+    .review p{
+        font-size: 17px !important;
+       }
 }
 
 @media (max-width:380px) {
