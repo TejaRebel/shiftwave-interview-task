@@ -263,7 +263,7 @@
         font-size: 12px;
     }
 
-    .about img {
+    .about-img {
         max-width: 280px;
         height: 210px !important;
     }
@@ -398,6 +398,9 @@
 }
 
 @media (max-width:430px) {
+    .banner-txt h2{
+        font-size: 50px;
+    }
     .tabs {
         display: flex;
         flex-wrap: wrap;
@@ -550,6 +553,10 @@
         align-items: center;
         font-size: 12px !important;
         gap: 0.1rem;
+    }
+    .book-btn, .our-btn {
+        font-size: 11px;
+        padding: 0.5rem 2rem;
     }
 }
 
