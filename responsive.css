@@ -176,7 +176,6 @@
 
     .about img {
         max-width: 500px;
-        height: auto;
     }
 }
 
@@ -215,7 +214,6 @@
 
     .about img {
         max-width: 280px;
-        height: auto;
     }
 }
 
@@ -350,7 +348,7 @@
     .tabs {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: start;
         gap: 1rem;
         margin-left: 1rem;
