@@ -9,6 +9,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 2000); 
   });
   
+  window.onscroll = function() {
+    const upArrow = document.getElementById("upArrow");
+    if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+        upArrow.classList.add("visible");
+    } else {
+        upArrow.classList.remove("visible");
+    }
+};
+
+document.getElementById("upArrow").onclick = function(event) {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
   
 
 function handleScroll() {
