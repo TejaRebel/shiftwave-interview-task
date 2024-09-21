@@ -222,6 +222,35 @@
     }
 }
 
+
+@media (max-width: 768px) {
+    header nav {
+        display: none; 
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #000;
+        flex-direction: column;
+        width: 100%;
+        text-align: start;
+        padding: 1rem 2rem 0rem 2rem;
+    }
+
+    header nav.active {
+        display: flex; 
+    }
+
+    header nav li {
+        margin-bottom: 1rem;
+    }
+
+    
+    .hamburger {
+        display: flex; 
+    }
+}
+
+
 @media (max-width: 768px) { 
     .tab-select {
         display: block;
@@ -496,6 +525,9 @@
         border-radius: 100%;
         padding: 1rem;
         font-size: 60px;
+    }
+    header nav{
+        font-size: 17px;
     }
 }
 
